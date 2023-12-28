@@ -1,33 +1,46 @@
-# ScholarAI
+# ****ScholAIr (AI-powered Scholarship Application Tool)****
+## 2nd Place Winner - Hunter Hub Hackathon 2023, University of Calgary
 
-An AI powered web-application that helps students and professionals with finding, applying and keeping track of their scholarship applications. 
+<p align="center">
+  <img width="300" src="screenshots/scholair.png">
+</p>
 
-## Pictures 
+## Team 405 Found
+- Abhay Sharma
+- Chirag Asrani
+- Sarthak Sharan
+- Zeeshan Chougle
+- Atharva Naik
 
-### Scholarship application screen 
+## Description
+An all-in-one AI-powered Scholarship application tool. Simplify the search for scholarships, maximize your potential, and sharpen your interview skills. This app includes features like - Intuitive Application Tracking, Profile auto-enhancement, Application auto-enhancement, GPT-powered Mock Interview Prep, as well as Personalized scholarships and resource recommendations.
 
-<img src="./Pictures/ScholAIr 1.png" alt="Scholarship Application Screen" width="600" height="400">
+### Intuitive Application Tracking
+Easy tracking of all the scholarships.
+<p align="center">
+  <img width="800" src="screenshots/tracking.png">
+</p>
 
-### Interview preperation helper 
-<img src="./Pictures/ScholAIr 2.png" alt="Interview Screen" width="600" height="400">
+### Application Auto-Enhancement
+Allows for GPT-powered enhancement of your answers to scholarship questions, based on your profile. 
+<p align="center">
+  <img width="800" src="screenshots/scholarship page.png">
+</p>
 
-### AI-powered response generator 
-<img src="./Pictures/ScholAIr 3.png" alt="Question Helper" width="600" height="400">
+### Mock Interview Prep
+Helps prepare for interviews by asking common scholarship interview questions, and giving feedback on your answers using GPT-4, using your profile as the context.
+<p align="center">
+  <img width="800" src="screenshots/interview.png">
+</p>
 
-## Installation Guide 
+### Personalized Scholarships
+Scholarships page where you can search for Institution-specific scholarships, that contains Scholarship cards consisting of relevant information including the scholarship amount, no. of recipients, time the application takes, and deadline for the scholarship application, along with the relevant tags for each scholarship.
+<p align="center">
+  <img width="800" src="screenshots/scholarships.png">
+</p>
 
-The application requires python version 3.9.13 or higher, npm and node.js to be installed before running. 
-
-After installing the above requirements, download the python requirements by the following command:
-```pip install -r requirements.txt```
-
-Once done, you can start the backend server using the following command: 
-```python main.py```
-
-To start the front-end server first go the the front end directory using:
-```cd Front_End```
-
-Then, start the react app with the command:
-```npm start```
-
-This should download all the dependencies and start the application on localhost. 
+### Personalized Resource recommendations
+Suggests Resources such as online courses or hackathons to help boost your profile.
+<p align="center">
+  <img width="800" src="screenshots/resource.png">
+</p>
