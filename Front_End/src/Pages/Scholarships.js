@@ -19,11 +19,10 @@ import {
 import "../Styles/JobsPageStyles.css";
 import "../Styles/SearchBar.css";
 import "../Styles/VerticalMenu.css";
-import ApplicationReview from "./ApplicationReview";
 import { styles } from "../styles"
 
 
-export default function JobsPage() {
+export default function Scholarships() {
   const [jobs, setJobsToShow] = useState([]);
   const [resultsToShow, setResultsToShow] = useState([]);
   const [showApplyJob, setShowApplyJob] = useState(false);
@@ -90,22 +89,6 @@ export default function JobsPage() {
     };
 
     fetchData();
-
-    Axios.get("http://127.0.0.1:5000/api/jobPostings", {})
-    .then((res) => {
-      console.log(res)
-      setJobsToShow(res.data);
-      setResultsToShow(res.data);
-    })
-    
-    Axios.get("http://127.0.0.1:5000/api/getUserDocumentsNames", {
-      params: {
-        token: localStorage.getItem("token"),
-      }
-    })
-    .then((res) => {
-      setDocuments(res.data);
-    })
     
   }, [])
 

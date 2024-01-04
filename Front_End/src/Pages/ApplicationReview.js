@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Axios from 'axios';
 import '../Styles/ApplicationReview.css'
-import JobsPage from "./JobsPage";
+import JobsPage from "./Scholarships";
 import { chatgptlogo } from "../Constants";
 import chatgpt from '../assets/chatgpt.png'
 

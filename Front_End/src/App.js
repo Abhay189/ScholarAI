@@ -3,7 +3,7 @@ import * as React from "react";
 import { Container, Col, Row, Navbar, Nav, Button } from "react-bootstrap";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import TrackingPage from "./Pages/TrackingPage";
-import JobsPage from "./Pages/JobsPage";
+import Scholarships from "./Pages/Scholarship2";
 import SalariesPage from "./Pages/SalariesPage";
 import LearningPage from "./Pages/LearningPage";
 import HomePage from "./Pages/HomePage";
@@ -27,6 +27,7 @@ function App() {
 
   return (
     <Router>
+      <div className="page_body">
        <Navbar collapseOnSelect expand="lg" style={{ backgroundColor: 'white' }}>
       <Container>
         <Navbar.Brand href="/"><img src={scholair} alt="ChatGPT Icon" style={{ marginRight: '5px', height: '80px', width: '220x' }} /></Navbar.Brand>
@@ -99,7 +100,7 @@ function App() {
           <TrackingPage2 />
         </Route>
         <Route path="/scholarships" exact>
-          <JobsPage />
+          <Scholarships />
         </Route>
         <Route path="/salaries" exact>
           <SalariesPage />
@@ -122,9 +123,6 @@ function App() {
         <Route path="/profileBuilder" exact>
           <ProfileBuilder />
         </Route>
-        {/* <Route path="/employerlogin" exact>
-          <EmployerLoginPage />
-        </Route> */}
         <Route path="/applicationReview" exact>
           <ApplicationReview />
         </Route>
@@ -145,6 +143,7 @@ function App() {
           </div>
         </Container>
       </Navbar>
+      </div>
     </Router>
     
   );
