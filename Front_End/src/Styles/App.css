@@ -73,3 +73,14 @@ body {
 .spaceblock {
   height: 30px;
 }
+
+
+button, .navButton {
+  background-color: #A27B5C;
+  color: white;
+  /* border-color: #FF82A9; */
+  border-width: 0px;
+  /* border-width:4px; */
+  border-radius: 15px;
+  font-weight:bold;
+}

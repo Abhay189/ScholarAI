@@ -58,28 +58,12 @@ function App() {
                 <Button
                   className="navButton"
                   href="/signup"
-                  style={{
-                    backgroundColor: `#FFC0BE`,
-                    color: `black`,
-                    borderColor: `#FF82A9`,
-                    borderWidth:'4px',
-                    borderRadius: '15px',
-                    fontWeight:'bold',
-                  }}
                 >
                   Sign up for free
                 </Button>
                 <Button
                   className="navButton"
                   href="/login"
-                  style={{
-                    backgroundColor: `#FFC0BE`,
-                    color: `black`,
-                    borderColor: `#FF82A9`,
-                    borderWidth:'4px',
-                    borderRadius: '15px',
-                    fontWeight:'bold',
-                  }}
                 >
                   Sign in
                 </Button>
@@ -90,9 +74,7 @@ function App() {
       </Container>
     </Navbar>
       
-      {/* <LearningPage /> */}
-      {/* <ApplicationReview /> */}
-      {/* <LoginPage /> */}
+
       <div className="content">
         <Switch>
           <Route path="/" exact>
@@ -148,10 +130,6 @@ function App() {
       </Navbar>
       </div>
     </Router>
-    
-    
-
-    
   );
 }
 

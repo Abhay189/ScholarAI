@@ -73,6 +73,10 @@ h1 {
     transition: 0.3s;
 }
 
+.scholarship_title{
+    width: 100%;
+}
+
 label {
     cursor: pointer;
     align-self: center;
@@ -82,3 +86,31 @@ label {
 .custom_formcheck:hover {
     transform: scale(1.05);
 }
+
+.searchBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    margin: 5px;
+}
+
+.searchfield { 
+    width: 60%;
+    height: 100%;
+}
+
+.searchbutton {
+    height: 100%;
+    border: 0px;
+    background-color: #A27B5C;
+    transition: 0.03s;
+}
+
+.searchbutton:hover {
+    transform: scale(1.04);
+}
+
+
+
