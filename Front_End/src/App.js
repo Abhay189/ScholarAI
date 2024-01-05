@@ -1,4 +1,4 @@
-import "./Styles/NavStyles.css";
+import "./Styles/App.css";
 import * as React from "react";
 import { Container, Col, Row, Navbar, Nav, Button } from "react-bootstrap";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
@@ -26,8 +26,9 @@ function App() {
   }
 
   return (
+
     <Router>
-      <div className="page_body">
+
        <Navbar collapseOnSelect expand="lg" style={{ backgroundColor: 'white' }}>
       <Container>
         <Navbar.Brand href="/"><img src={scholair} alt="ChatGPT Icon" style={{ marginRight: '5px', height: '80px', width: '220x' }} /></Navbar.Brand>
@@ -92,49 +93,51 @@ function App() {
       {/* <LearningPage /> */}
       {/* <ApplicationReview /> */}
       {/* <LoginPage /> */}
-      <Switch>
-        <Route path="/" exact>
-          <HomePage />
-        </Route>
-        <Route path="/tracking" exact>
-          <TrackingPage2 />
-        </Route>
-        <Route path="/scholarships" exact>
-          <Scholarships />
-        </Route>
-        <Route path="/salaries" exact>
-          <SalariesPage />
-        </Route>
-        <Route path="/learning" exact>
-          <LearningPage />
-        </Route>
-        <Route path="/signup" exact>
-          <SignupPage />
-        </Route>
-        <Route path="/employersignup" exact>
-          <EmployerSignupPage />
-        </Route>
-        <Route path="/login" exact>
-          <LoginPage />
-        </Route>
-        <Route path="/interview" exact>
-          <InterviewPage />
-        </Route>
-        <Route path="/profileBuilder" exact>
-          <ProfileBuilder />
-        </Route>
-        <Route path="/applicationReview" exact>
-          <ApplicationReview />
-        </Route>
-        <Route path="/employerdashboard" exact>
-          <EmployerDashboardPage />
-        </Route>
-        <Route path="/" >
-          <h1 style={{marginTop: `5%`, fontFamily:`Ubuntu`}}>Sorry this page doesn't exist!</h1>
-        </Route> 
-      </Switch>
+      <div className="content">
+        <Switch>
+          <Route path="/" exact>
+            <HomePage />
+          </Route>
+          <Route path="/tracking" exact>
+            <TrackingPage2 />
+          </Route>
+          <Route path="/scholarships" exact>
+            <Scholarships />
+          </Route>
+          <Route path="/salaries" exact>
+            <SalariesPage />
+          </Route>
+          <Route path="/learning" exact>
+            <LearningPage />
+          </Route>
+          <Route path="/signup" exact>
+            <SignupPage />
+          </Route>
+          <Route path="/employersignup" exact>
+            <EmployerSignupPage />
+          </Route>
+          <Route path="/login" exact>
+            <LoginPage />
+          </Route>
+          <Route path="/interview" exact>
+            <InterviewPage />
+          </Route>
+          <Route path="/profileBuilder" exact>
+            <ProfileBuilder />
+          </Route>
+          <Route path="/applicationReview" exact>
+            <ApplicationReview />
+          </Route>
+          <Route path="/employerdashboard" exact>
+            <EmployerDashboardPage />
+          </Route>
+          <Route path="/" >
+            <h1 style={{marginTop: `5%`, fontFamily:`Ubuntu`}}>Sorry this page doesn't exist!</h1>
+          </Route> 
+        </Switch>
+      </div>
 
-
+      <div className="footer">
       <Navbar collapseOnSelect expand="lg" sticky="bottom" style={{height:`170px`, backgroundColor:`#e29578`}}>
         <Container style={{justifyContent:`center`, marginTop:`10px`}}>
           <div>
@@ -145,6 +148,9 @@ function App() {
       </Navbar>
       </div>
     </Router>
+    
+    
+
     
   );
 }

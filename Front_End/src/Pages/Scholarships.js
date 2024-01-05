@@ -78,7 +78,7 @@ export default function Scholarships() {
     // }
     const fetchData = async () => {
       try {
-        const response = await Axios.get("https://www.scholarshipappplication.online/get_all_scholarships_brief?username=zeeshan", {
+        const response = await Axios.get("http://localhost:3000/get_all_scholarships_brief?username=zeeshan", {
         })
         console.log(response);
         setScholarships(response.data);
@@ -352,7 +352,7 @@ export default function Scholarships() {
         <Row style={{ justifyContent: `space-evenly`, gap:`25px` }}>
             {scholarships?.map((scholarship) => {
               return (
-                <div key={scholarship.id} className="scholarship-card" style={{ width: "20rem", height:"100%", background: '#FFFFFF', margin: `1% 0`, borderRadius: '35px', textAlign: 'center', padding: '11px', position: 'relative' }}>
+                <div key={scholarship.id} className="scholarship-card" style={{ width: "20rem", height:"100%", maxHeight: "600px",  background: '#FFFFFF', margin: `1% 0`, borderRadius: '35px', textAlign: 'center', padding: '11px', position: 'relative' }}>
                 {/* Centered Image */}
                 <img
                   src={scholarship.Image} // Replace with the actual image URL
